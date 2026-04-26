@@ -1,0 +1,234 @@
+BTS SERVICES INFORMATIQUES AUX ORGANISATIONS SESSION 2026
+ANNEXE 8-3 : Grille d’aide à l’évaluation (recto)
+Épreuve E5 – Support et mise à disposition de services informatiques
+Nom, prénom : N° candidat :
+Épreuve ponctuelle Contrôle en cours de formation N° commission :
+OPTION SISR OPTION SLAM Date : ...... / ...... /............
+Noms des membres de la commission d’interrogation
+- .............................................................................................. - .............................................................................................
+Proposition de note suite à l’évaluation du profil de la personne candidate
+Le tableau d’aide à l’appréciation des niveaux de maîtrise des compétences doit être complété de façon à évaluer
+le profil de la personne candidate (voir au verso). Une grille proposant des éléments d’appréciation des niveaux
+de maîtrise des compétences est proposée en bas de page.
+La commission sera vigilante, lors de l’établissement de la note, à la couverture des compétences du bloc exigée
+dans la définition de l’épreuve, ainsi que la conformité de l’environnement technologique. Le cas échéant,
+l’appréciation littérale fera apparaitre ce défaut de couverture ou de conformité dans la fiche communicable à la
+personne candidate.
+NOTE / 20
+Liste des pénalités retenues
+Les pénalités ci-dessous doivent être appliquées de façon à ce que la note finale de la personne candidate
+(annexe 6-4) en tienne compte.
+Portfolio inaccessible (10 points de pénalité)
+Absence de tableau de synthèse (2 points de pénalité)
+NOTE FINALE / 20
+Note à reporter sur la fiche d’appréciation destinée à la personne candidate
+Tableau d’aide à l’appréciation des niveaux de maîtrise des compétences du bloc au verso
+Non évaluable Non maîtrisé Maîtrise partielle Bonne maîtrise Excellente maîtrise
+Compétence non
+mise en œuvre,
+absence de
+l’environnement
+technologique
+N’identifie pas,
+n’exploite pas ou
+n’intègre pas les
+informations,
+indicateurs, besoins
+ou contraintes
+Identifie, exploite ou
+intègre partiellement
+les informations,
+indicateurs, besoins ou
+contraintes
+Identifie, exploite ou
+intègre les
+informations,
+indicateurs, besoins
+ou contraintes
+Analyse de façon
+pertinente les
+informations,
+indicateurs, besoins ou
+contraintes, en
+mobilisant des outils
+Ne répond pas ou
+n’apporte pas de
+solution aux besoins
+exprimés
+Répond de façon peu
+adaptée au besoin
+exprimé, propose des
+solutions peu
+pertinentes
+Atteint les objectifs
+demandés, répond
+globalement aux
+besoins exprimés ou
+donne des éléments
+de solution
+Propose des solutions
+pertinentes, permettant
+des améliorations/gains
+notables et en
+anticipant les
+contraintes
+Ne s’implique pas ou
+ne mobilise pas les
+technologies et
+démarches adéquates
+dans la production du
+résultat attendu
+Ne structure pas sa
+démarche ou mobilise
+de façon parcellaire les
+technologies et
+démarches
+Réalisation rigoureuse
+mobilisant les
+technologies et
+démarches
+appropriées
+Mobilise une démarche
+agile et réactive,
+envisageant diverses
+technologies et
+solutions possibles
+Ne traite pas les
+erreurs
+Identifie les erreurs
+sans les résoudre
+Identifie et résout les
+erreurs
+Identifie et résout les
+erreurs et les
+documente
+Ne communique pas
+de façon appropriée,
+ni à l’écrit, ni à l’oral
+Communique à l’écrit
+et/ou l’oral sans
+apporter
+d’argumentation
+Communique à l’écrit
+et/ou l’oral de façon
+claire et explicite
+Communique à l’écrit
+et/ou l’oral de façon
+adaptée aux
+interlocuteurs,
+argumente de façon
+étayéeNiveaux de maîtrise
+Compétences
+Non
+évaluable
+Non
+maitrisé
+Maitrise
+partielle
+Bonne
+maitrise
+Excellente
+maitrise
+ANNEXE 8-3 : Grille d’aide à l’évaluation (verso)
+Indicateurs de performance
+Capacité à rendre compte d’un travail réalisé au sein d’une équipe projet
+en mettant clairement en évidence sa contribution personnelle. ▢ ▢ ▢ ▢ ▢
+Gérer le patrimoine informatique
+ Recenser et identifier les ressources numériques
+ Exploiter des référentiels, normes et standards adoptés par le prestataire
+informatique
+ Mettre en place et vérifier les niveaux d’habilitation associés à un service
+ Vérifier les conditions de la continuité d’un service informatique
+ Gérer des sauvegardes
+ Vérifier le respect des règles d’utilisation des ressources numériques
+▢ ▢ ▢ ▢ ▢
+Le recensement du patrimoine informatique est exhaustif et réalisé au moyen d’un outil de
+gestion des actifs informatiques.
+Les référentiels, normes et standards sont mobilisés de façon pertinente.
+Les droits mis en place correspondent aux habilitations des acteurs.
+Les conditions de continuité et de reprise d’un service sont vérifiées et les manquements
+sont signalés.
+Les sauvegardes sont réalisées dans les conditions prévues conformément au plan de
+sauvegarde.
+Les restaurations sont testées et opérationnelles.
+Les écarts par rapport aux règles d’utilisation des ressources numériques sont détectés et
+signalés.
+Répondre aux incidents et aux demandes d’assistance et d’évolution
+ Collecter, suivre et orienter des demandes
+ Traiter des demandes concernant les services réseau et système, applicatifs
+ Traiter des demandes concernant les applications
+▢ ▢ ▢ ▢ ▢
+En utilisant les outils adaptés, les demandes d’assistance ont été prises en compte,
+correctement diagnostiquées et leur traitement correspond aux attentes.
+La réponse à une demande d’assistance est conforme à la procédure et adaptée à
+l’utilisateur.
+La méthode de diagnostic de résolution d’un incident est adéquate et efficiente.
+Une solution à l’incident est trouvée et mise en œuvre.
+Le cycle de résolution des demandes respecte les normes et standards du prestataire
+informatique.
+L’utilisation d’un logiciel de gestion de parc et d’incidents est maîtrisée.
+Le compte rendu d’intervention est clair et explicite.
+La communication écrite et orale est adaptée à l’interlocuteur.
+Développer la présence en ligne de l’organisation
+ Participer à la valorisation de l’image de l’organisation sur les médias
+numériques en tenant compte du cadre juridique et des enjeux économiques
+ Référencer les services en ligne de l’organisation et mesurer leur visibilité.
+ Participer à l’évolution d’un site Web exploitant les données de l’organisation.
+▢ ▢ ▢ ▢ ▢
+L’image de l’organisation est conforme aux attentes et valorisée.
+Les enjeux économiques liés à l’image de l’organisation sont identifiés et les obligations
+juridiques sont respectées.
+Les mentions légales sont accessibles et conformes à la législation.
+La visibilité des services en ligne de l’organisation est satisfaisante.
+Le site Web a évolué conformément au besoin exprimé.
+Travailler en mode projet
+ Analyser les objectifs et les modalités d’organisation d’un projet
+ Planifier les activités
+ Évaluer les indicateurs de suivi d’un projet et analyser les écarts
+▢ ▢ ▢ ▢ ▢
+Les objectifs et les modalités d’organisation du projet sont explicités.
+L’analyse des besoins et de l’existant est pertinente.
+Les activités personnelles sont planifiées selon une méthodologie donnée et les
+ressources humaines, matérielles et logicielles nécessaires sont mobilisées de manière
+efficace et pertinente.
+Le découpage en tâches est réaliste.
+Les livrables sont conformes.
+Le projet est documenté.
+Un compte rendu clair et concis est réalisé et les écarts sont justifiés.
+La communication écrite et orale est adaptée à l’interlocuteur.
+Mettre à disposition des utilisateurs un service informatique
+ Réaliser les tests d’intégration et d’acceptation d’un service
+ Déployer un service
+ Accompagner les utilisateurs dans la mise en place d’un service ▢ ▢ ▢ ▢ ▢
+Des tests pertinents d’intégration et d’acceptation sont rédigés et effectués.
+Les outils de test sont utilisés de manière appropriée.
+Un rapport de test du service est produit.
+Un support d’information est disponible.
+Les modalités d’accompagnement sont définies.
+Le service déployé est opérationnel et donne satisfaction à l’utilisateur.
+Organiser son développement professionnel
+ Mettre en place son environnement d’apprentissage personnel
+ Mettre en œuvre des outils et stratégies de veille informationnelle
+ Gérer son identité professionnelle
+ Développer son projet professionnel ▢ ▢ ▢ ▢ ▢
+Les besoins de formation sont identifiés pour assurer le support ou mettre à disposition un
+service.
+L’environnement d’apprentissage personnel est délimité et expliqué.
+La veille est régulière et vise à :
+- repérer les techniques et technologies émergentes du secteur informatique ;
+- utiliser de manière approfondie des moyens de recherche d'information ;
+- renforcer ses compétences.
+L’identité professionnelle est pertinente et visible sur un réseau social professionnel.BTS SERVICES INFORMATIQUES AUX ORGANISATIONS SESSION 2025
+ANNEXE 8-4 : Fiche d’appréciation destinée à la personne candidate
+Épreuve E5 – Support et mise à disposition de services informatiques
+Nom, prénom : N° candidat :
+Épreuve ponctuelle Contrôle en cours de formation N° commission :
+OPTION SISR OPTION SLAM Date : ...... / ...... /............
+Partie 1 : Présentation du parcours de professionnalisation (10 minutes maximum)
+Observations
+Partie 2 : Échange avec le jury (30 minutes)
+Observations
+Appréciation sur le niveau de maîtrise des compétences, sur la mobilisation de toutes les compétences du bloc et
+sur la conformité de l’environnement technologique des réalisations professionnelles présentées
+NOTE / 20
+Visa des membres de la commission d’interrogation

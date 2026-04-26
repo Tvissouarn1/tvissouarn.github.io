@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets | Titouan Vissouarn - Portfolio BTS SIO SISR</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">&lt;/&gt; <span>Portfolio</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">À propos</a></li>
+        <li><a href="competences.html" class="nav-item">Compétences</a></li>
+        <li><a href="experience.html" class="nav-item">Stages</a></li>
+        <li><a href="projets.html" class="nav-item active">Projets</a></li>
+        <li><a href="certifications.html" class="nav-item">Certifications</a></li>
+        <li><a href="documentation.html" class="nav-item">Documentation</a></li>
+        <li><a href="tableau.html" class="nav-item">Tableau</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+        <li><a href="CV.html" class="btn-primary btn-sm">Mon CV</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projets Section -->
+  <section id="projects" class="projects section-padding">
+    <div class="container reveal">
+      <h2 class="section-title">Mes <span class="highlight">Projets</span></h2>
+      <div class="project-grid">
+
+        <!-- Projet EGNARO -->
+        <article class="project-card" data-target="modal-egnaro">
+          <div class="project-img">
+            <img src="assets/schema/schema_egnaro.png" alt="Schéma EGNARO"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-info">
+            <h3>PROJET EGNARO</h3>
+            <p>Projet de 1ère année - Semestre 1. Conception d'une infrastructure réseau de base pour l'entreprise
+              Egnaro (Administration, Développeur, Clients).</p>
+            <div class="tags">
+              <span class="tag-blue">Réseau</span>
+              <span class="tag-yellow">DHCP / DNS</span>
+              <span class="tag-purple">Travailler en mode projet</span>
+              <span class="tag-orange">Mettre à disposition un service</span>
+              <span class="tag-red">Gérer le patrimoine informatique</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet GELTRAM -->
+        <article class="project-card" data-target="modal-geltram">
+          <div class="project-img">
+            <img src="assets/schema/schema_geltram.png" alt="Schéma GELTRAM"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-info">
+            <h3>PROJET GELTRAM</h3>
+            <p>Projet de 1ère année - Semestre 2. Architecture réseau avancée avec zone DMZ, Serveurs LAN, routeur
+              pare-feu PFSense et intégration de SNORT.</p>
+            <div class="tags">
+              <span class="tag-red">PFSense & Sécurité</span>
+              <span class="tag-purple">Travailler en mode projet</span>
+              <span class="tag-orange">Mettre à disposition un service</span>
+              <span class="tag-blue">Répondre aux incidents et demandes</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet GSB -->
+        <article class="project-card" data-target="modal-gsb">
+          <div class="project-img">
+            <img src="assets/schema/schema_gsb_1.png" alt="Schéma GSB"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-info">
+            <h3>PROJET GSB</h3>
+            <p>Projet de 2ème année. Architecture virtualisée multi-sites (Paris/Rennes) sous VMware ESXi, pare-feu
+              OPNSense, segmentation en VLANs et supervision.</p>
+            <div class="tags">
+              <span class="tag-blue">Virtualisation & Sécurité</span>
+              <span class="tag-purple">Travailler en mode projet</span>
+              <span class="tag-orange">Mettre à disposition un service</span>
+              <span class="tag-red">Gérer le patrimoine informatique</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales des Projets -->
+  <div id="modal-egnaro" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>PROJET EGNARO</h2>
+      <div class="modal-body">
+        <p>Projet de 1ère année - Semestre 1. Conception d'une infrastructure réseau de base pour l'entreprise Egnaro
+          (Administration, Développeur, Clients).</p>
+        <p><strong>Détails :</strong> Ce projet nous a permis de mettre en place une architecture réseau fonctionnelle
+          avec l'attribution d'adresses dynamiques (DHCP), la résolution de noms (DNS) et la séparation des services
+          pour différents départements.</p>
+        <div class="tags" style="margin-bottom: 2rem;">
+          <span class="tag-blue">Réseau</span>
+          <span class="tag-yellow">DHCP / DNS</span>
+          <span class="tag-purple">Travailler en mode projet</span>
+          <span class="tag-orange">Mettre à disposition un service</span>
+          <span class="tag-red">Gérer le patrimoine informatique</span>
+        </div>
+        <div class="modal-schemas">
+          <figure>
+            <figcaption>Schéma d'architecture</figcaption>
+            <img src="assets/schema/schema_egnaro.png" alt="Schéma EGNARO" class="clickable-image">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-geltram" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>PROJET GELTRAM</h2>
+      <div class="modal-body">
+        <p>Projet de 1ère année - Semestre 2. Architecture réseau avancée avec zone DMZ, Serveurs LAN, routeur pare-feu
+          PFSense et intégration de SNORT.</p>
+        <p><strong>Détails :</strong> Dans ce projet, l'accent a été mis sur la sécurité avec le déploiement d'une DMZ
+          pour exposer les services web de manière sécurisée, le filtrage des paquets via PFSense et la détection
+          d'intrusions à l'aide de SNORT.</p>
+        <div class="tags" style="margin-bottom: 2rem;">
+          <span class="tag-red">PFSense & Sécurité</span>
+          <span class="tag-purple">Travailler en mode projet</span>
+          <span class="tag-orange">Mettre à disposition un service</span>
+          <span class="tag-blue">Répondre aux incidents et demandes</span>
+        </div>
+        <div class="modal-schemas">
+          <figure>
+            <figcaption>Schéma d'architecture</figcaption>
+            <img src="assets/schema/schema_geltram.png" alt="Schéma GELTRAM" class="clickable-image">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-gsb" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>PROJET GSB</h2>
+      <div class="modal-body">
+        <p>Projet de 2ème année regroupant l'architecture de base (Semestre 3) et son évolution multi-sites (Semestre
+          4).</p>
+        <p><strong>Détails de l'architecture :</strong> Architecture virtualisée sous VMware ESXi, pare-feu OPNSense, et
+          segmentation en VLANs pour isoler les services (DMZ, Serveurs, Admin Sys, Direction, Commercial).</p>
+        <p><strong>Évolution multi-sites :</strong> L'entreprise dispose maintenant de deux sites (Paris et Rennes)
+          interconnectés de manière sécurisée via un tunnel VPN IPsec et la mise en place d'accès distants avec OpenVPN.
+          S'ajoute à cela un Reverse Proxy pour la sécurité applicative web et une supervision globale via Zabbix et
+          Wazuh.</p>
+        <div class="tags" style="margin-bottom: 2rem;">
+          <span class="tag-blue">Virtualisation & Sécurité</span>
+          <span class="tag-purple">Travailler en mode projet</span>
+          <span class="tag-orange">Mettre à disposition un service</span>
+          <span class="tag-red">Gérer le patrimoine informatique</span>
+        </div>
+        <div class="modal-schemas">
+          <figure>
+            <figcaption>Architecture Semestre 3</figcaption>
+            <img src="assets/schema/schema_gsb_1.png" alt="Schéma GSB Semestre 3A" class="clickable-image">
+          </figure>
+          <figure>
+            <figcaption>Architecture Semestre 4 (Multi-sites)</figcaption>
+            <img src="assets/schema/schema_gsb_2.png" alt="Schéma GSB Semestre 4" class="clickable-image">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visionneuse d'images plein écran (Lightbox) -->
+  <div id="image-lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2026 Titouan Vissouarn - Portfolio BTS SIO SISR</p>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

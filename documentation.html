@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation | Titouan Vissouarn</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="logo">&lt;/&gt; <span>Portfolio</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">À propos</a></li>
+        <li><a href="competences.html" class="nav-item">Compétences</a></li>
+        <li><a href="experience.html" class="nav-item">Stages</a></li>
+        <li><a href="projets.html" class="nav-item">Projets</a></li>
+        <li><a href="certifications.html" class="nav-item">Certifications</a></li>
+        <li><a href="documentation.html" class="nav-item active">Documentation</a></li>
+        <li><a href="tableau.html" class="nav-item">Tableau</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+        <li><a href="CV.html" class="btn-primary btn-sm">Mon CV</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Documentation Section -->
+  <section id="documentation" class="documentation section-padding" style="min-height: 80vh; padding-top: 150px;">
+    <div class="container reveal">
+      <h2 class="section-title">Ma <span class="highlight">Documentation</span></h2>
+      <p class="align-center" style="margin-bottom: 2rem; color: var(--text-muted);">
+        Ressources et procédures mises à jour en temps réel depuis mon dépôt GitHub.
+      </p>
+      
+      <!-- Aide concernant GitHub Issues -->
+      <div style="margin-bottom: 2.5rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--primary-color); border-radius: 4px;">
+        <p style="margin-bottom: 0.5rem; color: var(--text-main);"><strong><i class="fa-solid fa-circle-info" style="color: var(--primary-color); margin-right: 8px;"></i>Comment ajouter un document ?</strong></p>
+        <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Les documents sont récupérés à partir des <strong>Issues</strong> (tickets) du dépôt GitHub. Pour que cela fonctionne :</p>
+        <ul style="list-style-type: none; font-size: 0.9rem; color: var(--text-muted);">
+          <li style="margin-bottom: 5px;"><i class="fa-solid fa-check" style="color: var(--tag-green); margin-right: 8px;"></i>Créez une nouvelle "Issue" dans le dépôt <strong>Tvissouarn1/docs</strong> (qui doit être Public).</li>
+          <li style="margin-bottom: 5px;"><i class="fa-solid fa-check" style="color: var(--tag-green); margin-right: 8px;"></i>Le titre de l'Issue sera le titre du document.</li>
+          <li><i class="fa-solid fa-check" style="color: var(--tag-green); margin-right: 8px;"></i>Le corps de l'Issue (en Markdown) sera le contenu du document, qui s'affichera ici en pleine page.</li>
+        </ul>
+      </div>
+
+      <div id="docs-container" class="docs-grid">
+        <div class="loading-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Chargement des documents...</div>
+      </div>
+
+      <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: var(--text-main);">Documents de stage</h3>
+      <div class="docs-grid">
+        <!-- Guide Jeedom -->
+        <div class="doc-card reveal active local-pdf-card" data-title="Guide d'installation de Jeedom" data-pdf="assets/docs/Guide d'installation de Jeedom sur.pdf" style="cursor: pointer;">
+          <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Guide d'installation de Jeedom</h3>
+            <p>706.0 KB</p>
+          </div>
+        </div>
+
+        <!-- Guide Switch HP -->
+        <div class="doc-card reveal active local-pdf-card" data-title="Guide de paramétrage Switch HP série 2810" data-pdf="assets/docs/Guide de paramétrage Switch HP serie 2810.pdf" style="cursor: pointer;">
+          <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Guide de paramétrage Switch HP série 2810</h3>
+            <p>317.6 KB</p>
+          </div>
+        </div>
+
+        <!-- Doc imprimante zebra -->
+        <div class="doc-card reveal active local-pdf-card" data-title="Guide de paramétrage Imprimante Zebra" data-pdf="assets/docs/Guide de paramétrage Imprimante Zebra.pdf" style="cursor: pointer;">
+          <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Guide de paramétrage Imprimante Zebra</h3>
+            <p>977.9 KB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Document View -->
+  <div id="doc-modal" class="modal">
+    <div class="modal-content doc-modal-content">
+      <span class="close-doc-modal close-modal">&times;</span>
+      <h2 id="doc-modal-title" style="color: var(--primary-color); margin-bottom: 1.5rem; padding-right: 2rem;"></h2>
+      <div id="doc-modal-body" class="modal-body markdown-body">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2026 Titouan Vissouarn - Portfolio BTS SIO SISR</p>
+    </div>
+  </footer>
+
+  <!-- Marked.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

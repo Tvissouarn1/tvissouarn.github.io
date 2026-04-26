@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Titouan Vissouarn - Portfolio BTS SIO SISR</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="logo">&lt;/&gt; <span>Portfolio</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">À propos</a></li>
+        <li><a href="competences.html" class="nav-item">Compétences</a></li>
+        <li><a href="experience.html" class="nav-item">Stages</a></li>
+        <li><a href="projets.html" class="nav-item">Projets</a></li>
+        <li><a href="certifications.html" class="nav-item active">Certifications</a></li>
+        <li><a href="documentation.html" class="nav-item">Documentation</a></li>
+        <li><a href="tableau.html" class="nav-item">Tableau</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+        <li><a href="CV.html" class="btn-primary btn-sm">Mon CV</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications section-padding" style="min-height: 80vh;">
+    <div class="container reveal">
+      <h2 class="section-title">Mes <span class="highlight">Certifications</span></h2>
+      
+      <div class="docs-grid">
+        <!-- Certification Pix -->
+        <div class="doc-card reveal active local-pdf-card" 
+             data-title="Certification Pix" 
+             data-pdf="assets/certificat/certification-pix-20250120.pdf" 
+             style="cursor: pointer; position: relative;">
+          <div class="doc-icon">
+            <img src="assets/certificat/pix_logo.png" alt="Pix Logo" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;">
+          </div>
+          <div class="doc-info">
+            <h3>Certification Pix</h3>
+            <p>Délivrée le 20/01/2025</p>
+            <p><small>Cliquez pour prévisualiser</small></p>
+          </div>
+          <a href="assets/certificat/certification-pix-20250120.pdf" 
+             download="Certification_Pix_Titouan_Vissouarn.pdf" 
+             class="btn-primary btn-sm download-btn" 
+             style="margin-left: auto; z-index: 10;"
+             onclick="event.stopPropagation();">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Document View (PDF Preview) -->
+  <div id="doc-modal" class="modal">
+    <div class="modal-content doc-modal-content">
+      <span class="close-doc-modal close-modal">&times;</span>
+      <h2 id="doc-modal-title" style="color: var(--primary-color); margin-bottom: 1.5rem; padding-right: 2rem;"></h2>
+      <div id="doc-modal-body" class="modal-body">
+        <!-- Iframe will be injected here by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2026 Titouan Vissouarn - Portfolio BTS SIO SISR</p>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

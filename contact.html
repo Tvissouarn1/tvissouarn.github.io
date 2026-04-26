@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Titouan Vissouarn - Portfolio BTS SIO SISR</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">&lt;/&gt; <span>Portfolio</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">À propos</a></li>
+        <li><a href="competences.html" class="nav-item">Compétences</a></li>
+        <li><a href="experience.html" class="nav-item">Stages</a></li>
+        <li><a href="projets.html" class="nav-item">Projets</a></li>
+        <li><a href="certifications.html" class="nav-item">Certifications</a></li>
+        <li><a href="documentation.html" class="nav-item">Documentation</a></li>
+        <li><a href="tableau.html" class="nav-item">Tableau</a></li>
+        <li><a href="contact.html" class="nav-item active">Contact</a></li>
+        <li><a href="CV.html" class="btn-primary btn-sm">Mon CV</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="container reveal">
+      <h2 class="section-title"><span class="highlight">Me</span> Contacter</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Prêt à collaborer ?</h3>
+          <p>N'hésitez pas à me contacter pour toute opportunité de stage, d'alternance ou pour échanger sur
+            l'infrastructure IT.</p>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact.titouanvissouarn@gmail.com">contact.titouanvissouarn@gmail.com</a>
+          </div>
+          <div class="contact-item">
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/titouan-vissouarn-4ba81734b/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Tvissouarn1" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="POST"
+          onsubmit="event.preventDefault(); alert('Formulaire de démo - Configurer PHP pour l\'envoi');">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Votre Nom" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Votre Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Sujet" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Votre Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2026 Titouan Vissouarn - Portfolio BTS SIO SISR</p>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

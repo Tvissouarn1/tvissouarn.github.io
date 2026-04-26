@@ -1,0 +1,47 @@
+STAGES   -  Centre  Hospitalier,  Paimpol  -  service  informatique  9  semaines  :  configuration  switch/routeur,  installation  OS,  help-desk  compétence  :  Répondre  aux  incidents  et  aux  demandes  d’assistance  et  d’évolution,  Mettre  à  
+disposition
+ 
+des
+ 
+utilisateurs
+ 
+un
+ 
+service
+ 
+informatique,
+ 
+Gérer
+ 
+le
+ 
+patrimoine
+ 
+informatique
+  -  Lycée  Félix  le  Dantec,  Lannion  -  service  informatique  5  semaines  :  installation  d’un  module  EOLE  (Hâpy),  configuration  switch  compétence  :  travail  en  mode  projet,  Mettre  à  disposition  des  utilisateurs  un  service  
+informatique
+  -  ISITIX,  Lannion  -  service  informatique  11  semaines  :  machine  learning  (ia),  test  d'intrusion  et  pentest  compétence  :  travail  en  mode  projet,  Répondre  aux  incidents  et  aux  demandes  d’assistance  
+et
+ 
+d’évolution,
+ 
+Développer
+ 
+la
+ 
+présence
+ 
+en
+ 
+ligne
+ 
+de
+ 
+l’organisation
+                                 PROJET  1ere  année  BTS  SIO  semestre  1  :  PROJET  EGNARO  
+                   
+semestre  2  -  PROJET  GELTRAM  
+                     
+2eme  année  BTS  SIO  semestre  3  -  PROJET  GSB  
+semestre  4  -  PROJET  GSB  (suite)   
+ 
