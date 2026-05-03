@@ -798,6 +798,24 @@ footer p {
 /* ==========================================================================
    Animations
    ========================================================================== */
+
+/* ==========================================================================
+   Mouse Halo Effect
+   ========================================================================== */
+.mouse-halo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.05) 0%, rgba(59, 130, 246, 0.02) 40%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  will-change: transform;
+}
 .reveal {
   opacity: 0;
   transform: translateY(30px);

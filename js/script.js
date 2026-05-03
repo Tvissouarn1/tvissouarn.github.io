@@ -39,16 +39,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Hero About Animation ---
-    const hero = document.getElementById('home');
-    if (hero) {
-      // Toggle about card when user scrolls down
-      if (window.scrollY > 30) {
-        hero.classList.add('show-about');
-      } else {
-        hero.classList.remove('show-about');
-      }
-    }
+    // Moved to click events instead of scroll events
   });
+
+  // --- 2.5 Hero About Click Events ---
+  const hero = document.getElementById('home');
+  const avatarPlaceholder = document.querySelector('.avatar-placeholder');
+  const aboutCard = document.querySelector('.about-card');
+
+  if (hero && avatarPlaceholder) {
+    avatarPlaceholder.style.cursor = 'pointer';
+    // Add tooltip to indicate it's clickable
+    avatarPlaceholder.title = "Cliquez pour en savoir plus";
+    
+    avatarPlaceholder.addEventListener('click', () => {
+      hero.classList.add('show-about');
+    });
+  }
+
+  if (hero && aboutCard) {
+    aboutCard.style.cursor = 'pointer';
+    aboutCard.title = "Cliquez pour fermer";
+    
+    aboutCard.addEventListener('click', () => {
+      hero.classList.remove('show-about');
+    });
+  }
 
   // --- 3. Scroll Reveal Animation ---
   function reveal() {
@@ -252,5 +268,125 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // --- 9. Auto-snap to Formation Section (Fluid 1-scroll animation) ---
+  
+  // Custom scroll animation function (1 second duration)
+  function smoothScrollTo(targetPosition, duration) {
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+      
+      // Easing (easeOutQuart)
+      const ease = 1 - Math.pow(1 - progress, 4);
+      
+      window.scrollTo(0, startPosition + distance * ease);
+      
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+    
+    requestAnimationFrame(animation);
+  }
+
+  const formationSection = document.getElementById('formation');
+  if (formationSection) {
+    let isAnimating = false;
+
+    // Desktop: Mouse wheel
+    window.addEventListener('wheel', (e) => {
+      if (isAnimating) {
+        e.preventDefault();
+        return;
+      }
+      
+      const currentScrollY = window.scrollY;
+      const formationTop = formationSection.offsetTop;
+
+      // Si l'utilisateur est en haut (Hero) et donne UN coup de molette vers le bas
+      if (e.deltaY > 0 && currentScrollY < formationTop - 10) {
+        e.preventDefault();
+        isAnimating = true;
+        
+        smoothScrollTo(formationTop, 1000);
+        
+        setTimeout(() => { isAnimating = false; }, 1000); // Durée de l'animation
+      }
+      
+      // Si l'utilisateur est sur la formation et donne UN coup de molette vers le haut
+      else if (e.deltaY < 0 && currentScrollY > 10 && currentScrollY <= formationTop + 50) {
+        e.preventDefault();
+        isAnimating = true;
+        
+        smoothScrollTo(0, 1000);
+        
+        setTimeout(() => { isAnimating = false; }, 1000);
+      }
+    }, { passive: false });
+
+    // Mobile: Touch swipe
+    let touchStartY = 0;
+    window.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (e) => {
+      if (isAnimating) {
+        e.preventDefault();
+        return;
+      }
+
+      const touchEndY = e.touches[0].clientY;
+      const deltaY = touchStartY - touchEndY;
+      const currentScrollY = window.scrollY;
+      const formationTop = formationSection.offsetTop;
+
+      // Swipe vers le haut (défilement vers le bas)
+      if (deltaY > 50 && currentScrollY < formationTop - 10) {
+        e.preventDefault();
+        isAnimating = true;
+        smoothScrollTo(formationTop, 1000);
+        setTimeout(() => { isAnimating = false; }, 1000);
+      }
+      // Swipe vers le bas (défilement vers le haut)
+      else if (deltaY < -50 && currentScrollY > 10 && currentScrollY <= formationTop + 50) {
+        e.preventDefault();
+        isAnimating = true;
+        smoothScrollTo(0, 1000);
+        setTimeout(() => { isAnimating = false; }, 1000);
+      }
+    }, { passive: false });
+  }
+
+  // --- 10. Mouse Halo Effect ---
+  const halo = document.createElement('div');
+  halo.classList.add('mouse-halo');
+  document.body.appendChild(halo);
+
+  // Position is updated in requestAnimationFrame for smooth 60fps movement
+  window.addEventListener('mousemove', (e) => {
+    // 300px offset because the halo is 600x600 (center it on cursor)
+    requestAnimationFrame(() => {
+      halo.style.transform = `translate(${e.clientX - 300}px, ${e.clientY - 300}px)`;
+      if (halo.style.opacity === '0' || halo.style.opacity === '') {
+        halo.style.opacity = '1';
+      }
+    });
+  });
+
+  // Fade out when leaving the window
+  document.addEventListener('mouseleave', () => {
+    halo.style.opacity = '0';
+  });
+
+  document.addEventListener('mouseenter', () => {
+    halo.style.opacity = '1';
+  });
 
 });

@@ -66,19 +66,24 @@
           </div>
         </div>
 
-        <form class="contact-form" action="#" method="POST"
-          onsubmit="event.preventDefault(); alert('Formulaire de démo - Configurer PHP pour l\'envoi');">
+        <form class="contact-form" action="https://formsubmit.co/contact.titouanvissouarn@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio !">
+          <!-- Optionnel : rediriger vers la page de contact après envoi -->
+          <input type="hidden" name="_next" value="https://tvissouarn1.github.io/portfolio/contact.html">
+          <!-- Désactiver le captcha de formsubmit pour une meilleure expérience -->
+          <input type="hidden" name="_captcha" value="false">
+
           <div class="form-group">
-            <input type="text" id="name" placeholder="Votre Nom" required>
+            <input type="text" id="name" name="Nom" placeholder="Votre Nom" required>
           </div>
           <div class="form-group">
-            <input type="email" id="email" placeholder="Votre Email" required>
+            <input type="email" id="email" name="Email" placeholder="Votre Email" required>
           </div>
           <div class="form-group">
-            <input type="text" id="subject" placeholder="Sujet" required>
+            <input type="text" id="subject" name="_subject" placeholder="Sujet" required>
           </div>
           <div class="form-group">
-            <textarea id="message" rows="5" placeholder="Votre Message" required></textarea>
+            <textarea id="message" name="Message" rows="5" placeholder="Votre Message" required></textarea>
           </div>
           <button type="submit" class="btn-primary">Envoyer le message</button>
         </form>
